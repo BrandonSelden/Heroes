@@ -39,6 +39,7 @@ public class HeroesListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent lastIntent = getIntent();
         setContentView(R.layout.activity_heroes_list);
         InputStream jsonInputStream = getResources().openRawResource(R.raw.heroes);
         jsonFileText = readTextFile(jsonInputStream);
